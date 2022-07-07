@@ -91,7 +91,7 @@
                         <span class="input-group-append"></span>
                     </div>
                     <div class="mt-lg-5">
-                        <button type="button" class="btn btn-outline-primary ml-lg-5 justify-content-end" onclick="exportingData()">Export</button>
+                        <button type="button" class="btn btn-outline-primary ml-lg-5 justify-content-end" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Export</button>
                     </div>
                 </div>
             </div>
@@ -154,10 +154,34 @@
             </tbody>
         </table>
         <div style="position:relative">
+            <div style="position:absolute;left:30px">
+                <p>Mengetahui</p>
+                <p style="line-height:0px" id="daerah_camat"></p>
+                <p style="margin-top:60px" id="nama_camat">hshsh</p>
+                <p style="line-height:0px" id="nip_camat"></p>
+            </div>
             <div style="position:absolute;right:30px">
                 <p id="tmptgl_petugas">Badung,</p>
                 <p style="line-height:0px">Petugas</p>
-                <h4 style="margin-top:60px" id="tmptgl_nama">hshsh</h4>
+                <p style="margin-top:60px" id="tmptgl_nama">hshsh</p>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Nama Camat</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="text" class="form-control" id="nameCamat" placeholder="Nama Camat">
+                <input type="text" class="form-control" id="NIPCamat" style="margin-top:10px" placeholder="NIP Camat">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onclick="exportingData()">Save changes</button>
+            </div>
             </div>
         </div>
     </div>
@@ -218,6 +242,7 @@
         $("#tmptgl_petugas").html(datafl['kabupaten']+", ")
     }else if(datafl['role'] == "2"){
         $("#tmptgl_petugas").html(datafl['nama_kecamatan']+", ")
+        $("#daerah_camat").html("Camat "+datafl['nama_kecamatan'].replace("Kecamatan", ""))
     }else if(datafl['role'] == "3"){
         $("#tmptgl_petugas").html(datafl['nama_desa']+", ")
     }else{
@@ -226,6 +251,8 @@
     $("#tmptgl_nama").html(datafl['nama_lengkap'])
 
     function exportingData() {
+        $("#nama_camat").html($("#nameCamat").val())
+        $("#nip_camat").html("NIP. "+$("#NIPCamat").val())
         var divContents = $("#exportData").html();
         var printWindow = window.open('', '', 'height=400,width=800');
         printWindow.document.write('<html><head></head><body >');
