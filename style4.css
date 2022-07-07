@@ -1,0 +1,93 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body{
+    background: #E0EDFE !important;
+}
+
+.input-group-append {
+    cursor: pointer;
+  }
+ 
+.container{
+    background: white ;
+    border-radius: 20px;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff;
+    letter-spacing: 1.3px;
+}
+
+.btn{
+    width: 150px;
+}
+
+.logo img{
+    width: 600px;
+}
+
+
+.container_footer{
+  background: black;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+}
+
+label{
+    font-weight: 500;
+  }
+  
+.isi{
+    font-weight: 400;
+  }
+
+@media (max-width: 992px) {
+    .count_box-container {
+        flex-wrap: wrap;
+    }
+}
+
+.dropbtn {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}

@@ -1,0 +1,251 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reseting */
+
+body {
+    /* background:url('image/disdukcapil.gif') no-repeat fixed; */
+    background: #E0EDFE !important;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper {
+    max-width: 600px;
+    min-height: 300px;
+    margin: 75px auto;
+    padding: 40px 30px 30px 30px;
+    background-color: #ecf0f3;
+    border-radius: 15px;
+    box-shadow: 5px 5px 7px gray, -5px -5px 7px gray;
+}
+
+/*.signup {
+    max-width: 600px;
+    width: 600px;
+}*/
+
+.logo {
+    width: 400px;
+    margin: auto;
+}
+
+.logo img {
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+    /* border-radius: 50%;
+    box-shadow: 0px 0px 3px #5f5f5f,
+        0px 0px 0px 5px #ecf0f3,
+        8px 8px 15px #a7aaa7,
+        -8px -8px 15px #fff; */
+}
+
+.wrapper .name {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555;
+}
+
+/*.wrapper .subname {
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 1.3px;
+    padding-left: 10px;
+    color: #555;
+}*/
+
+.wrapper .form-field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1 rem;
+    color: #666;
+    padding: 10px 15px 10px 10px;
+    /* border: 1px solid red; */
+}
+
+.wrapper .field input {
+    width: 100%;
+    display: block;
+    border: none;
+    outline: none;
+    font-size: 1 rem;
+    background: none;
+    color: #fff;
+    padding: 10px 15px 10px 10px;
+    /* border: 1px solid red; */
+}
+
+.is-false{
+    border: red 1px solid
+}
+
+.wrapper .form-field {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    box-shadow: inset 8px 8px 8px #cbced1, inset -8px -8px 8px #fff;
+}
+
+.wrapper .field {
+    padding-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #999;
+    color: #555;
+    box-shadow: inset 8px 8px 8px #555, inset -8px -8px 8px #555
+}
+
+.wrapper .field .fas {
+    color: #555;
+}
+
+.wrapper .form-field .fas {
+    color: #555;
+}
+
+.wrapper .btn {
+    box-shadow: none;
+    /*width: 100%;
+    height: 40px;
+    background-color: #03A9F4;
+    color: #fff;*/
+    border-radius: 25px;
+    box-shadow: 3px 3px 3px #b1b1b1,
+        -3px -3px 3px #fff;
+    letter-spacing: 1.3px;
+} 
+
+/* .wrapper .btn:hover {
+    background-color: #039BE5;
+}*/
+
+.wrapper a {
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 1.3px;
+    text-decoration: underline;
+    text-decoration-color: #03A9F4;
+    color: #03A9F4;
+}
+
+
+.wrapper a:hover {
+    color: #039BE5;
+} 
+
+/*.tulis .a {
+    font-size: 0.8rem;
+    color: #03A9F4;
+}*/
+
+@media(max-width: 380px) {
+    .wrapper {
+        margin: 30px 20px;
+        padding: 40px 15px 15px 15px;
+    }
+}
+
+.input-switch{
+	display: none;
+}
+
+.label-switch{
+	display: inline-block;
+	position: relative;
+}
+
+.label-switch::before, .label-switch::after{
+	content: "";
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.5s;
+}
+
+.label-switch::before {
+    width: 6em;
+    height: 2.5em;
+    border: 1px solid #757575;
+    border-radius: 4em;
+    background: #888888;
+}
+
+.label-switch::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.5em;
+    height: 2.5em;
+    border: 1px solid #757575;
+    border-radius: 4em;
+    background: #ffffff;
+}
+
+.input-switch:checked ~ .label-switch::before {
+    background: #03A9F4;
+    border-color: #03A9F4;
+}
+
+.input-switch:checked ~ .label-switch::after {
+    left: unset;
+    right: 0;
+    background: #01628f;
+    border-color:#000;
+}
+
+.info-text {
+	display: inline-block;
+}
+
+.info-text::before{
+	content: "Tidak Aktif";
+}
+
+.input-switch:checked ~ .info-text::before{
+	content: "Aktif";
+}
+
+.dropbtn {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}

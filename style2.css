@@ -1,0 +1,280 @@
+/* Importing fonts from Google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+body{
+    background: #E0EDFE !important;
+}
+
+.loc{
+    background-color: #0E4085;
+    color: white ;
+    padding: 20px; 
+    position: sticky;
+    top: 4em;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+td{
+  padding: 10px;
+}
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 400px;
+    
+}
+
+.container_menu {
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+h2{
+    text-align: center;
+}
+
+.countering{
+  font-size: 40px;
+  font-weight: 900;
+}
+
+.content{
+  justify-content: center;
+}
+
+.border{
+    border-radius: 30px;
+    background-color: white;
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 200px;
+}
+
+@media (max-width: 542px) {
+    .border{
+      width: 300px;
+    }
+    .border-two{
+      width: 100px;
+    }
+    .border-three{
+      width: 300px;
+    }
+  
+}
+
+.border-two{
+  border-radius: 30px;
+  background-color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 200px;
+}
+
+.border-three{
+    border-radius: 30px;
+    background-color: #425D81;
+    margin-left: 30px;
+    margin-right: 30px;
+    color: white;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+.border-four{
+  border-radius: 30px;
+  background-color: #0E4085;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 250px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.border-five{
+  border-radius: 30px;
+  background-color: #1D62BE;
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 250px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.count_total {
+    margin-top: 45px;
+    text-align: center;
+  }
+  
+.count_total h2 {
+    text-transform: uppercase;
+  }
+  
+.count_total h4 {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+.count {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4em;
+}
+  
+.count_box .count-detail {
+    padding: 2px 20px 20px 20px;
+  }
+  
+.count_img-container {
+    width: 100px;
+    background-color: #0E4085;
+    height: 100px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 20px solid #d7daf4;
+    margin: 0 auto auto auto;
+  }
+  
+.count_box .count_img-box {
+    width: 75px;
+  }
+  
+.count .count-detail p {
+    margin-top: 15px;
+  }
+  
+.count img {
+    width: 100%;
+}
+
+
+.fitur {
+    margin-top: 45px;
+    text-align: center;
+  }
+  
+.fitur h2 {
+    text-transform: uppercase;
+  }
+  
+.fitur h4 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+
+.menu {
+    display: flex;
+    justify-content: center;
+}
+  
+.menu_box .menu-detail {
+    padding: 10px 10px 10px 10px;
+  }
+  
+.menu_box .menu_img-box {
+    width: 100%;
+  }
+  
+.menu .menu-detail p {
+    margin-top: 15px;
+  }
+  
+.menu img {
+    width: 100%;
+}
+
+.menu_img-container {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 1em;
+}
+
+.tabel{
+  background-color: white;
+  padding: 20px;
+  margin-left: 20px ;
+  margin-right: 20px;
+}
+
+.container_footer{
+  background: black;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+}
+
+@media (max-width: 992px) {
+    .count_box-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+}
+
+.dropbtn {
+  color: black;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
