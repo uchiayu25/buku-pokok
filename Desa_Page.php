@@ -314,6 +314,12 @@
             </tbody>
         </table>
         <div style="position:relative">
+            <div style="position:absolute;left:30px">
+                <p style="margin-bottom:10px">Mengetahui</p>
+                <p style="margin-top:0">Kepala Desa</p>
+                <p style="margin-top:60px" id="namaPenJaw">....</p>
+                <p style="line-height:0" id="NIP">NIP. </p>
+            </div>
             <div style="position:absolute;right:30px">
                 <p id="tmptgl_petugas">Badung,</p>
                 <p style="line-height:0px">Petugas</p>
