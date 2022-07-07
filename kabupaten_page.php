@@ -283,8 +283,9 @@
     </section>
     <div style="width:29.7cm; border: black 0.5px solid; display:none" id="exportData" >
         <div style="text-align:center">
-            <h4><b>BUKU POKOK PEMAKAMAN</b></h4>
-            <h4><b>LAPORAN AGREGAT</b></h4>
+            <img width="100px" src="https://upload.wikimedia.org/wikipedia/commons/d/d2/Lambang_Kabupaten_Badung.png" alt="">
+            <h4 style="margin:0"><b>BUKU POKOK PEMAKAMAN<br>LAPORAN AGREGAT</b></h4>
+            <p style="margin:5px; font-size:11px">PUSAT PEMERINTAHAN MANGUPURA MANDALA<br>JALAN RAYA SEMPIDI MENGWI- BADUNG BALI TELP. (0361) 8947979</p>
             <h4 id="tempatMakam" style="line-height:0px"></h4>
             <!-- <h4 id="alamatMakam" style="line-height:0px"></h4> -->
         </div>
@@ -300,10 +301,16 @@
             </tbody>
         </table>
         <div style="position:relative">
+            <div style="position:absolute;left:30px">
+                <p style="margin-bottom:10px">Mengetahui</p>
+                <p style="margin-top:0">Kepala Dinas Kependudukan dan Pencatatan Sipil<br>Kabupaten Badung</p>
+                <p style="margin-top:60px" id="namaPenJaw">Drs. Anak Agung Ngurah Arimbawa</p>
+                <p style="line-height:0" id="NIP">NIP 196511161987031006 </p>
+            </div>
             <div style="position:absolute;right:30px">
                 <p id="tmptgl_petugas">Badung,</p>
                 <p style="line-height:0px">Petugas</p>
-                <h4 style="margin-top:60px" id="tmptgl_nama">hshsh</h4>
+                <p style="margin-top:90px" id="tmptgl_nama">hshsh</p>
             </div>
         </div>
     </div>
